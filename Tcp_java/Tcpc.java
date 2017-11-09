@@ -59,9 +59,8 @@ class Tcpc
 			{					
 				inFromServer = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
 				sentence = inFromServer.readLine();
-				System.out.println(sentence);
 				//Set received message to the TextArea
-				ta.setText("\n=>"+sentence);
+				ta.setText(ta.getText()+"\n=>"+sentence);
 			}catch(SocketException e){
 				e.printStackTrace();
 			}catch(IOException e){
