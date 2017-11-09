@@ -63,7 +63,7 @@ class Tcps
 				inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
 				clientSentence = inFromClient.readLine();
 				//Set received message to the TextArea
-				ta.setText("\n=>"+clientSentence);
+				ta.setText(ta.getText()+"\n=>"+clientSentence);
 			}catch(SocketException e){
 				e.printStackTrace();
 			}catch(IOException e){
@@ -80,7 +80,7 @@ class Tcps
 			{
 				outToClient = new DataOutputStream(connectionSocket.getOutputStream());
 				sentence = ta1.getText();
-				outToClient.writeBytes(sentence);
+				outToClient.writeBytes(sentence+ '\n');
 				ta1.setText("");
 			}catch(IOException e){
 				e.printStackTrace();
