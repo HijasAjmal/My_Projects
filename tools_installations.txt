@@ -1,0 +1,80 @@
+Python opencv
+--------------
+sudo apt-get install libopencv-dev python-opencv
+
+nemo file explorer
+-------------------
+apt-get install nemo nemo-fileroller
+
+
+unzip files
+-------------
+unzip android-studio.zip -d /opt
+
+composer installation
+----------------------
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+
+Icon creation
+--------------
+1.Install this one : apt-get install --no-install-recommends gnome-panel -y
+
+2.Create icon for the application : gnome-desktop-item-edit /root/Desktop/ --create-new
+
+
+3.Create a file like this : vim /usr/share/applications/eclipse.desktop
+
+4.Add to tool icons: chmod +x /usr/share/applications/AndroidStudio.desktop
+
+4nonimizer
+-----------
+change the directory to your desired one
+and type the command "git clone https://github.com/Hackplayers/4nonimizer.git"
+be patient for few seconds, it will clone soon
+then chage the directory to 4nonimizer and install the 4nonimizer script: use this command "./4nonimzer install"
+it will take few minutes to update your system by required 4nonimzer packages
+
+
+install main menu
+-----------------
+apt-get install alacarte
+
+
+
+install graphics in linux
+-------------------------
+
+CFLAGS=-I/usr/include/guile/2.0 ./configure 
+
+sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev guile-1.8
+
+cp /usr/local/lib/libgraph.* /usr/lib
+
+
+
+
+
+mysql commands
+-----------------
+
+
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+
+
+FLUSH PRIVILEGES;
+
+
+
+jdbc
+---------
+export CLASSPATH=$CLASSPATH:/usr/share/java/mysql-connector-java.jar
+
+
+
+create bootable usb in linux
+-------------------------------
+dd if=kali-linux-2016.2-amd64.iso of=/dev/sdb bs=512k
+
