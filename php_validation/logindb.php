@@ -7,8 +7,7 @@ $mypassword = $_POST['pwd'];
 $sql = "select Name, Email,Phone from login where Name = '$myusername' AND Password = '$mypassword'";
 $result = mysqli_query($conn, $sql);
 $row = $result->fetch_assoc();
-$count = mysqli_num_rows($result);
-if ($count == 1)
+if ($result == 1)
 {
 	echo "LOGIN SUCCESS";
 	echo "<table><tr><th>Name</><th>Email</th><th>Phone</th><tr><td>" 
