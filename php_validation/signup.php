@@ -1,7 +1,7 @@
 <?php
 
 $tbname = "login";
-$conn = mysqli_connect("localhost", "virus", ".virusdb", "ssn")or die("cannot connect");
+$conn = mysqli_connect("localhost", "virus", ".virusdb", "Demo")or die("cannot connect");
 $myusername = $_POST['usr'];
 $emai = $_POST['email'];
 $phon = $_POST['phone'];
@@ -11,5 +11,6 @@ $result = mysqli_query($conn,$sql);
 if ($result == 1)
 {
 	echo "Registration SUCCESS";
+	header( 'Location:index.html' );
 	}
 ?>
