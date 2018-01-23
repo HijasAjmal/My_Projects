@@ -33,7 +33,7 @@ class Tcps
 		//Button event
 		b1.addActionListener( new ActionListener(){
 			public void actionPerformed(ActionEvent ae){
-				new sendTo();
+				sendTo();
 		}
 		});
 		//Layout section
