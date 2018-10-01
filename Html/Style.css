@@ -1,0 +1,55 @@
+.hd{
+	background-color: #0d5cdb;
+	width: 100%;
+	height: 30px;
+	color: white;
+}
+.dimn{
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.dimn:hover {
+    background-color: #777;
+}
+
+.mainbg {
+	background-color:#777;
+	width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: url("download1.jpeg") no-repeat;
+    background-size: cover;
+  
+}
+#search {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+#next{
+	width: 50px;
+	height: 50px;
+	float: right;
+	background-color: gray;
+	margin-top: 230px;
+	margin-right: 100px;
+}
+#prev{
+	width: 50px;
+	height: 50px;
+	float: left;
+	background-color: gray;
+	margin-top: 230px;
+	margin-left: 100px;	
+}
