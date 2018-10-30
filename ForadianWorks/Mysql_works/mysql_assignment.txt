@@ -1,3 +1,0 @@
-1.	SELECT name, count(students.id) FROM schools, students
-	where schools.is_deleted = '0' and schools.id = school_id
-	group by name;
