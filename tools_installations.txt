@@ -78,3 +78,14 @@ create bootable usb in linux
 -------------------------------
 dd if=kali-linux-2016.2-amd64.iso of=/dev/sdb bs=512k
 
+
+
+cast_android_screen_to_pc
+------------------------------
+
+sudo apt-get install adroid-tools-adb
+
+sudo apt-get install ffmpeg
+
+adb shell screenrecord --output-format=h264 --size 800x1500 - | ffplay -framerate 60 -framedrop -bufsize 16M -
+
